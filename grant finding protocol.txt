@@ -1,0 +1,380 @@
+# Sprout Society — Grant Research & Application Protocol
+**Version:** 1.0  
+**Status:** Active  
+**Owner:** Grant Manager  
+**Last Updated:** April 2026
+
+---
+
+## Why This Document Exists
+
+The Grant Manager tool tracks and manages applications. It does NOT reliably discover grants — AI cannot generate accurate, working application links from memory. This protocol defines how Claude is used *externally* to find real, verified grants, and how that information flows into the tool.
+
+---
+
+## Part 1: Organization Profile (Always Active Context)
+
+When asking Claude to research grants, always include this block or reference this file:
+
+```
+ORGANIZATION: Sprout Society
+Legal Name: Sprout Society Inc.
+EIN: 83-1298420
+Type: 501(c)3 nonprofit
+Founded: 2019 (through the RJE Foundation, in memory of Russell J. Efros)
+Address: 449 Troutman St, Brooklyn, NY 11237
+Service Area: Brooklyn, NYC, and surrounding metro area
+Website: sproutsociety.org
+
+MISSION: Building community and peer connection for mental wellness; 
+combating the loneliness epidemic.
+
+PROGRAMS:
+1. Free space to host events, community groups, and creative collaboration.
+2. Offer resources and community through peer support to combat the lonliness epidemic (third spaces)
+3. Fundraising and financial support for community building and creative organizations. 
+4. An online calendar/portal for community builders and event organizers and mental health orgs to promote themselves and their services
+
+TARGET POPULATION:
+- Adults experiencing loneliness, social isolation, or depression
+- Young adults ages 19–35
+- Brooklyn/NYC residents, particularly underserved communities
+
+KEY FACTS FOR GRANT ALIGNMENT:
+- Peer-led, not clinical — we are not a therapy provider
+- Community-based model, grassroots origins
+- Addresses loneliness epidemic (bipartisan policy priority since 2023 Surgeon General report)
+- Mental health equity angle — free programs serving underserved Brooklyn neighborhoods
+- Small but growing — seeking general operating AND program-specific funding
+- Annual budget: Under $100,000
+- Staff: 2 full-time, 1 part-time
+- Volunteers: ~10 active peer supporters
+
+FUNDING PRIORITIES (in order):
+1. General operating support 
+2. Community wellness / loneliness 
+3. Peer support program expansion 
+4. Women Led Orgs
+```
+
+---
+
+## Part 2: Grant Discovery — The Right Way
+
+### The Core Rule
+**Never trust a grant link Claude generates from memory.** Claude's training data has a cutoff and grant portals change frequently. Every grant must be verified with a live web search before being added to the tool.
+
+### Session Setup (Start Every Research Session With This)
+
+Paste this into Claude at the start of any grant research session:
+
+```
+You are a grant researcher for Sprout Society, a mental health peer support 
+nonprofit in Brooklyn, NY (EIN: 83-1298420). 
+
+Your job today is to find REAL, VERIFIED grant opportunities with WORKING 
+APPLICATION LINKS. 
+
+RULES FOR THIS SESSION:
+1. Use web search for EVERY grant you recommend — do not generate links from memory
+2. For each grant, search for and verify: (a) the funder still offers this program, 
+   (b) the current application portal URL, (c) the current deadline
+3. If you cannot find a working application link via search, say so — do not guess
+4. Mark confidence: HIGH (verified via live search), MEDIUM (funder page found, 
+   application details unclear), LOW (cannot verify — do not include)
+5. Only return HIGH and MEDIUM confidence grants
+
+Format each result exactly like this:
+---
+GRANT NAME: [Full program name]
+FUNDER: [Organization name]
+FUNDER WEBSITE: [Main org URL — verified]
+APPLICATION URL: [Direct link to application page or portal — verified via search]
+DEADLINE: [Specific date OR "Rolling" OR "TBD — check [URL]"]
+AMOUNT: [Range or max award]
+ELIGIBILITY: [Key requirements in 2-3 sentences]
+FIT FOR SPROUT SOCIETY: [Why this is a good match — be specific]
+CONFIDENCE: HIGH / MEDIUM
+VERIFICATION NOTE: [What you searched and found to confirm this is real]
+---
+```
+
+### Research Prompts by Category
+
+**General Search (Start Here)**
+```
+Search for active grant opportunities for Sprout Society. Use web search to find 
+grants from: NYC foundations, national mental health funders, loneliness/social 
+connection funders, and grassroots nonprofit funders. Find grants with deadlines 
+in the next 6 months. Verify each application link before including it.
+```
+
+**NYC-Specific Funding**
+```
+Search for NYC government and NYC foundation grants available to small nonprofits 
+focused on mental health and community wellness. Include: NYC DOHMH Community 
+Mental Health grants, NYC Council discretionary funding, NYC Mayor's Office 
+programs, and major NYC foundations (Altman Foundation, Ira W. DeCamp Foundation, 
+Tiger Foundation, Clark Foundation, etc.). Use web search. Verify all links.
+```
+
+**Federal / National**
+```
+Search for federal grants and major national foundation grants for mental health 
+peer support nonprofits. Check: SAMHSA grant programs, HRSA Community Health 
+grants, Robert Wood Johnson Foundation, Wellbeing Trust, One Mind, American 
+Foundation for Suicide Prevention, Surgeon General loneliness initiative funding. 
+Use web search. Verify all links and current application windows.
+```
+
+**Loneliness / Social Connection Angle**
+```
+The 2023 US Surgeon General's Advisory on loneliness created new funding attention 
+for social connection programs. Search for grants specifically targeting loneliness, 
+social isolation, and community connection — this is Sprout Society's core angle. 
+Look for: AARP Foundation grants, Campaign to End Loneliness resources, 
+foundation RFPs mentioning the Surgeon General report. Use web search. Verify links.
+```
+
+**Grassroots / Small Org Funding**
+```
+Search for grants specifically designed for small, emerging, or grassroots nonprofits 
+with budgets under $500K. Sprout Society is a young organization and many large 
+grants require 3+ years of financial history. Find funders who specifically support 
+early-stage nonprofits. Use web search. Verify links.
+```
+
+**Microgrants**
+```
+Search for grants of small value that focus on small organizations.
+Use web search. Verify all links and current application windows.
+```
+
+**Women-Run Orgs / Business Funding**
+```
+Search for grants and programs that champion and support women founders/executives/businesses. 
+Use web search. Verify all links and current application windows.
+```
+
+---
+
+## Part 3: Verifying a Grant Before Adding to the Tool
+
+Before clicking "Add to My Applications" in the Grant Manager, complete this checklist:
+
+**Step 1 — Verify the funder page exists**
+- Go to the funder's main website
+- Confirm they have an active grantmaking program
+
+**Step 2 — Verify the application URL**
+- Click the application link
+- Confirm it loads and is the current cycle (not a past year's archived RFP)
+- Check for a login/portal requirement — note this
+
+**Step 3 — Confirm the deadline**
+- Deadlines on Claude's output may be estimates — find the official deadline on the funder's site
+- Check if the cycle is open or if it has a LOI (Letter of Intent) step first
+
+**Step 4 — Check eligibility fast**
+- Geographic restrictions (NYC only? National?)
+- Organizational age requirements (some require 3+ years)
+- Budget size thresholds
+- Program type restrictions (clinical vs. peer/community)
+
+**Step 5 — Add verified data to the tool**
+- Use the URL Import feature in Grant Manager with the verified application URL
+- Manually correct any fields the AI got wrong during import
+- Set the verified deadline
+- Add a note: "Verified [date] — link confirmed working"
+
+---
+
+## Part 4: Application Workflow
+
+Once a grant is verified and added to the tool, follow this process:
+
+### Phase 1: Research (Week 1–2 Before Writing)
+
+**Claude prompt for funder research:**
+```
+I'm applying to [GRANT NAME] from [FUNDER]. Help me research this funder.
+
+1. What are their stated funding priorities for this cycle?
+2. Who have they funded in the past that is similar to Sprout Society?
+3. What language/framing do they respond to?
+4. What should I emphasize vs. downplay about Sprout Society?
+5. Are there any red flags or misalignment I should know about?
+
+Search their website and any public 990s or press releases you can find.
+```
+
+**Deliverables to save in Grant Manager → Strategy Library:**
+- Funder profile (1 page)
+- Alignment analysis
+- Language guide (words/phrases they use that we should mirror)
+
+### Phase 2: Drafting (Week 2–3)
+
+**Claude prompt for narrative drafting:**
+```
+Help me draft the [SECTION NAME] section for the [GRANT NAME] application.
+
+Grant requirements: [paste the exact prompt from the application]
+Word/character limit: [exact limit]
+Funder priorities: [paste your research from Phase 1]
+
+About Sprout Society's relevant work:
+[paste any specific program stats, stories, or outcomes relevant to this section]
+
+Draft this section to:
+1. Open with a specific, human story or statistic
+2. Connect our work directly to the funder's stated priorities
+3. Use their language/framing (see funder profile)
+4. End with a clear ask
+5. Stay within the word limit
+```
+
+**After Claude drafts:**
+- Paste into Grant Manager → Grant Detail → Application tab
+- Note the word count
+- Mark the todo "First draft complete"
+
+### Phase 3: Review (3–5 Days Before Deadline)
+
+**Claude prompt for application review:**
+```
+Please review this grant application section for [FUNDER NAME].
+
+[Paste the draft]
+
+Check for:
+1. Does it directly answer what they asked?
+2. Is the language aligned with the funder's priorities?
+3. Are there any claims that need evidence/data to back them up?
+4. Is the ask clear and specific?
+5. What's the weakest sentence — rewrite it
+6. Does it stay within [word limit]?
+
+Be direct. Tell me what's weak, not just what's strong.
+```
+
+### Phase 4: Submission
+
+- Submit via the verified application portal
+- Screenshot or PDF the confirmation
+- Update status in Grant Manager → "Submitted"
+- Set a calendar reminder for the decision date
+- If decision date isn't given, set a 90-day follow-up reminder
+
+### Phase 5: Post-Award (If Funded)
+
+- Log the award amount and date in Grant Manager
+- Immediately note the **reporting deadline** in the tool (usually 6–12 months post-award)
+- Send a thank-you note within 48 hours
+- Add funder to relationship tracker with notes
+
+---
+
+## Part 5: Repeatable Grant Research Sessions
+
+Run one of these sessions weekly or bi-weekly:
+
+### Session Type A: New Grant Discovery (60 min)
+1. Start Claude with the session setup prompt (Part 2)
+2. Run 2–3 category searches from the Research Prompts list
+3. Verify each result (Part 3 checklist)
+4. Add verified grants to the tool
+5. Goal: 3–5 new verified grants added per session
+
+### Session Type B: Application Sprint (2–3 hours)
+1. Pick one grant in the tool with status "In Progress"
+2. Run the funder research prompt if not done
+3. Draft each section using Claude
+4. Paste drafts into the tool's application tab
+5. Goal: Complete one full draft application per sprint
+
+### Session Type C: Pipeline Review (30 min)
+1. Open Grant Manager Dashboard
+2. Check upcoming deadlines — anything due in under 14 days?
+3. Check todo completion on in-progress applications
+4. Identify any grants that have gone stale (no activity in 2+ weeks)
+5. Goal: Nothing falls through the cracks
+
+---
+
+## Part 6: Known Reliable Grant Sources
+
+These organizations are known to fund organizations like Sprout Society. Always search their current grantmaking pages directly — do not rely on Claude's memory for deadlines or amounts.
+
+**NYC Foundations**
+- Altman Foundation — altmanfoundation.org/grants
+- Ira W. DeCamp Foundation — decampfoundation.org
+- Tiger Foundation — tigerfoundation.org
+- The Clark Foundation — clarkfoundation.org
+- Pinkerton Foundation — pinkertonfdtn.org (youth focus)
+- Taconic Foundation — taconicfoundation.org
+- Brooklyn Community Foundation — brooklyncommunityfoundation.org
+
+**NYC Government**
+- NYC DOHMH Mental Health grants — search nyc.gov/dohmh
+- NYC Council Discretionary Funding — contact your local council member's office directly
+- NYC Mayor's Office of Community Mental Health — search nyc.gov
+
+**National Mental Health Funders**
+- Robert Wood Johnson Foundation — rwjf.org/en/grants
+- One Mind — onemind.org
+- American Foundation for Suicide Prevention — afsp.org/grants
+- Wellbeing Trust — wellbeingtrust.org
+- The Jed Foundation — jedfoundation.org
+- Mental Health America — mhanational.org/grants
+
+**Loneliness / Social Connection**
+- AARP Foundation — aarp.org/aarp-foundation/grants
+- Coalition to End Social Isolation — cesil.org
+- Search: "Surgeon General loneliness initiative grants 2025 2026"
+
+**Grassroots / Small Org**
+- Schott Foundation — schottfoundation.org
+- Resist Foundation — resist.org/apply-for-a-grant
+- Solidaire Network — solidairenetwork.org
+- Search: "grants for emerging nonprofits NYC 2025 2026"
+
+**Federal**
+- SAMHSA — samhsa.gov/grants (peer support specific programs)
+- Search: "SAMHSA peer support specialist grants 2025 2026"
+- grants.gov — search "mental health community" with 501c3 eligibility
+
+---
+
+## Part 7: What Claude Cannot Do (Important Limits)
+
+| Task | Claude Can Do? | Alternative |
+|------|---------------|-------------|
+| Find grant names and funders | Yes — with web search | — |
+| Generate working application links from memory | NO — links will be wrong | Use web search, verify manually |
+| Predict exact deadlines without searching | NO — cycles change | Always verify on funder's site |
+| Access paywalled databases (Foundation Directory, Instrumentl) | NO | Subscribe to these separately |
+| Submit applications | NO | Manual submission required |
+| Read your organization's financial docs | YES — if you paste/upload them | — |
+| Draft narratives tailored to Sprout Society | YES — excellent at this | — |
+| Review and strengthen application drafts | YES — excellent at this | — |
+| Analyze funder priorities from their website | YES — with web search | — |
+
+---
+
+## Appendix: Quick-Copy Grant Addition Format
+
+When you've verified a grant and want to quickly add it to the tool, use this format in the Grant Manager's manual entry:
+
+```
+Grant Name: [Full official name]
+Funder: [Organization]
+Amount: [Min]–[Max] or just Max
+Deadline: [YYYY-MM-DD] ← must be verified
+Application URL: [Verified, working URL]
+Notes: Verified [date]. [Any other notes about the cycle, LOI requirements, etc.]
+```
+
+---
+
+*This document is a living protocol. Update the Known Sources list as new funders are discovered. Update the Organization Profile section when budget/staff numbers change.*

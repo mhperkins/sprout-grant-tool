@@ -1,0 +1,247 @@
+# Sprout Society — Funder Research Protocol (Step 1b)
+**Version:** 1.0
+**Status:** Active
+**Owner:** Grant Manager
+**Last Updated:** April 2026
+**Follows:** Grant Finding Protocol (Step 1)
+**Precedes:** Grant Writing Protocol (Step 2)
+
+---
+
+## Purpose
+
+Deep funder research is the most important step in the grant application process. The best applications don't just answer the questions — they demonstrate that the applicant understands the funder's world: their language, their grantees, their priorities, and the specific problem they are trying to solve with their grantmaking. This protocol ensures that no narrative writing begins until that understanding is established.
+
+**Every target grant gets a Funder Research Brief before any writing begins.**
+
+---
+
+## Tiering
+
+Not all grants receive the same depth of research. Research depth is determined by Pre-Filter Score (Part 3A).
+
+Tier 1 (Score 20–25) — Full Brief
+
+Run Phases A–G in full
+Required before applying
+
+Tier 2 (Score 16–19) — Light Brief
+
+Phase A (condensed)
+Phase B (top 3 grantees only, no full 990 analysis)
+Phase C (fit only)
+Skip Phases F–G unless strong potential
+
+Tier 3 (Score ≤15) — No Brief
+
+Do not research further
+Do not apply
+---
+
+## Phase A — Funder Profile
+*Who are they, and what do they actually care about right now?*
+
+**Goal:** Understand the funder's current priorities, not just their evergreen mission language. Funders shift focus. Guidelines from two years ago may not reflect this cycle.
+
+**Steps:**
+1. Read the current grant guidelines in full — do not skim. Note exact terminology and phrasing.
+2. Find the most recent annual report or grantmaking summary — look for any shifts in priority language.
+3. Search for info sessions, webinars, or Q&A recordings from the current or most recent cycle. If a recording exists, watch or read the transcript.
+4. If no public recording exists, check whether an info session is upcoming — if so, note the date and register.
+5. Identify the program officer by name if possible. Search for any public talks, panel appearances, or interviews they've given. Note what they emphasize when they speak about the fund.
+6. Answer this question in writing before moving to Phase B: *What problem is this funder trying to solve? Not what they fund — why do they fund it?*
+
+**Output:** 1-page funder profile summarizing current priorities, key personnel, and the "why" behind their grantmaking.
+
+**Early Exit Condition**
+If during Phase A you identify any of the following:
+
+Clear ineligibility
+Geographic mismatch
+Funding restricted to clinical services only
+Minimum budget requirement exceeds Sprout Society’s size
+
+→ Stop research immediately and mark as NO-GO
+
+---
+
+## Phase B — Fit Analysis
+*An honest assessment before a word is written.*
+
+**Goal:** Know exactly where Sprout Society is strong, where the fit is weak, and make a deliberate choice about whether and how to apply.
+
+**Steps:**
+1. List Sprout Society's strongest alignment points with this funder — be specific, not generic.
+2. List any weak points or gaps — program model mismatches, budget borderlines, geographic scope, org age, etc.
+3. Identify any eligibility risks that need to be resolved before applying.
+4. Answer: *What does this funder need to believe about Sprout Society to say yes?* Write one sentence.
+5. Answer: *What aspects of Sprout Society's work should be emphasized for this funder? What should be backgrounded or reframed?*
+6. Make a go/no-go recommendation. If go: note any conditions (e.g., "only if annual expenses confirmed under $100K").
+
+**Output:** Fit analysis — strengths, risks, go/no-go, and the single belief the funder needs to have.
+
+**Early Exit Rule**
+If during phase B you determine this it a no-go, stop research immediately.
+Provide your reasoning for how and why you determined it a no-go. 
+
+---
+
+## Phase C — Grantee Research
+*Who have they actually said yes to, and what does that tell us?*
+
+**Goal:** Understand what a funded application looks like in practice. Past grantees are the clearest signal of funder values — more reliable than guidelines alone.
+
+**Steps:**
+1. Pull the funder's 990s for the last 2–3 years. Source: ProPublica Nonprofit Explorer (nonprofits.propublica.org) or the funder's own 990 filings. Look at Part IX (grants paid) to see actual grantees and award amounts.
+2. Cross-reference with any grantee list the funder publishes on their website.
+3. Identify any past grantees that are most similar to Sprout Society in size, model, geography, or focus.
+4. For each of those comparable grantees: look up their website and any public-facing descriptions of their work. Note the language they use — this is often a reliable proxy for language that resonates with this funder.
+5. Look for patterns across the full grantee list: What program models appear repeatedly? What population framings? What geographic focus?
+6. Note any grantees that seem like a surprising fit — these may reveal unstated funder priorities.
+
+**Output:** Grantee pattern summary — up to 5 comparable orgs with notes, plus up to 7 patterns observed across the broader grantee list.
+
+---
+
+## Phase D — Voice & Language Guide
+*So the application sounds like it belongs in their world.*
+
+**Goal:** Build a vocabulary guide so every narrative section uses language that resonates with this specific funder — not generic nonprofit language, not Sprout Society's internal language.
+
+**Steps:**
+1. Pull 10–15 key terms and phrases directly from funder materials: guidelines, annual reports, website, program officer interviews. These are words they chose — mirror them.
+2. Note any framing they explicitly use that Sprout Society should adopt for this application.
+3. Note any language Sprout Society uses internally that might not land with this funder — flag these for substitution.
+4. Draft 2–3 sentences that describe Sprout Society's work entirely in the funder's language. This becomes the orientation statement for all narrative drafting.
+5. If the funder has a stated theory of change or impact framework, map Sprout Society's work onto it explicitly.
+
+**Output:** Language guide — funder vocabulary list, substitution flags, and the 2–3 sentence orientation statement.
+
+---
+
+## Phase E — Application Intelligence
+*Practical details that determine how we write.*
+
+**Goal:** Understand the mechanics of this specific application before drafting begins. Word limits, review criteria, and process details all shape how narratives should be constructed.
+
+**Steps:**
+1. Document exact word or character limits for every question in the application.
+2. Determine whether there is an LOI stage before the full application — if so, document LOI requirements separately.
+3. Identify who reviews applications: program staff, board, community panel, or some combination. This affects tone and technical depth.
+4. Find and document the stated review criteria — not just the mission statement, but what they say they actually evaluate.
+5. Note any explicit preferences about narrative style: do they want stories? data? both? Have they said anything publicly about what makes a strong vs. weak application?
+6. Document the full timeline: deadline, notification date, any intermediate check-ins or site visits.
+
+**Output:** Application mechanics sheet — question list with word limits, review criteria, reviewer profile, and full timeline.
+
+---
+
+## Phase F — Network Intelligence
+*The highest-value intel, and it's free.*
+
+**Goal:** Determine whether anyone in Sprout Society's network has a relationship with, or direct knowledge of, this funder. A warm connection or insider perspective can meaningfully inform framing — or surface information that isn't public.
+
+**Steps:**
+1. Ask the founder and any board members: do you know anyone at this foundation, or anyone who has received a grant from them?
+2. Check whether any past or current Sprout Society partners, advisors, or collaborators have a relationship with this funder.
+3. If a connection exists: have a focused conversation — ask about funder culture, what reviewers respond to, any known priorities or sensitivities not reflected in public materials.
+4. If no connection exists: note this and move on. Do not let the absence block the application.
+5. Document any intelligence gathered and flag it in the relevant phases above.
+
+**Note:** Network intelligence is not about getting special treatment — it's about understanding the funder more fully. The application must stand on its own merit.
+
+**Output:** Network intelligence note — connection identified or confirmed absent, any insights gathered.
+
+---
+
+## Phase G — Program Officer Outreach
+*One targeted question, sent early.*
+
+**Goal:** Make direct contact with the program officer before submitting. This serves two purposes: it demonstrates seriousness and organizational competence, and it can surface critical information about fit or framing that isn't in the guidelines.
+
+**Steps:**
+1. Identify the appropriate program officer or grants contact (usually in the guidelines or on the funder's website).
+2. Draft a single, focused question — not a pitch, not a request for a meeting. One question that you genuinely need answered to write the best application. Examples:
+   - "We're a peer-led community organization — would we be considered under the community health category or the social services category?"
+   - "Our annual budget is at the edge of your stated threshold — can you clarify whether the budget figure refers to expenses or revenue?"
+3. Send via email if a contact is listed. Keep it to 3–4 sentences: who you are, what you're applying for, the one question.
+4. If an info session is available instead, bring the question there.
+5. Document the response — even a non-response is information.
+6. Do not follow up more than once.
+
+**Output:** Outreach log — question sent, response received (or noted as no response), any intelligence gathered.
+
+---
+
+## Sequencing Note
+
+Phases A through G do not need to happen in strict order — some information surfaces across phases simultaneously. However:
+
+- **Phase C (Fit Analysis) should not be finalized until Phases A and B are complete.** You need grantee data to assess fit accurately.
+- **Phase G (Outreach) should happen early** — as soon as you have enough funder knowledge to ask one good question. Don't wait until the brief is finished.
+- **Phase D (Language Guide) should be the last thing written** — it synthesizes everything that came before it.
+
+---
+
+## Final Output: The Funder Research Brief
+
+When all phases are complete, compile outputs into a single **Funder Research Brief** for this grant. The brief is the sole reference document for all narrative drafting in Step 2.
+
+**Brief sections:**
+1. Funder Profile (Phase A output)
+2. Grantee Pattern Summary (Phase B output)
+3. Fit Analysis + Go/No-Go (Phase C output)
+4. Language Guide (Phase D output)
+5. Application Mechanics Sheet (Phase E output)
+6. Network Intelligence Note (Phase F output)
+7. Outreach Log (Phase G output)
+
+**The brief is complete when:** A writer could pick it up with no prior knowledge of this funder and produce a competitive application using only this document and Sprout Society's org profile.
+
+---
+
+## Claude Prompt for Running This Protocol
+
+Use this prompt at the start of any Phase A–B research session:
+
+```
+You are a grant researcher for Sprout Society, a community-building nonprofit 
+in Brooklyn, NY (EIN: 83-1298420).
+
+I need you to run the Funder Research Protocol (Step 1b) for the following grant:
+
+FUNDER: [Funder name]
+GRANT PROGRAM: [Program name]
+FUNDER WEBSITE: [URL]
+APPLICATION URL: [URL if known]
+DEADLINE: [Date]
+
+Run Phases A and B now:
+
+PHASE A — FUNDER PROFILE:
+1. Fetch the funder's current grant guidelines page and read them fully
+2. Search for their most recent annual report or grantmaking summary
+3. Search for any info sessions, webinars, or program officer interviews
+4. Answer: What problem is this funder trying to solve, and why?
+
+PHASE B — GRANTEE RESEARCH:
+1. Search ProPublica Nonprofit Explorer for this funder's 990s (last 2-3 years)
+2. Pull Part IX grantee data — list all grantees with award amounts
+3. Cross-reference with any grantee list on their website
+4. Identify 3-5 grantees most similar to Sprout Society and look up each one
+5. Summarize patterns across the grantee list
+
+About Sprout Society:
+- Community-building org — peer-led, non-clinical, free programs
+- Combats loneliness and social isolation; builds belonging and third spaces
+- Serves Brooklyn/NYC adults, especially underserved communities
+- Founded 2019, annual budget under $500K, 2 full-time staff
+- Programs: free event space, peer support groups, online community calendar/portal
+
+Use web search for everything. Do not generate information from memory.
+Flag confidence: HIGH (verified via live search) or MEDIUM (funder page found, 
+some details unclear).
+```
+
+*Run Phase C–G research and compile the Funder Research Brief using the 
+documentation template in `Funder_Research_Brief_Template.md`.*
