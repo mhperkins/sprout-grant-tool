@@ -133,3 +133,34 @@ When generating import JSON for Claude to paste in, always include `questions` a
 **Add a question template:**
 1. Add a new key to `TEMPLATE_QUESTIONS` with an array of question objects
 2. Add the option to the template selector dropdown in `ImportView`
+
+---
+
+## End-of-Session Protocol
+
+> 🚨 **"update current state" = FOUR steps, ALWAYS. Not two.** Docs alone is an incomplete response.
+> Steps **3 (commit and push)** and **4 (delivery slide)** are **NON-NEGOTIABLE** and the most often
+> forgotten. If you are about to reply after only steps 1 and 2, STOP. You are not done.
+
+When Max says "update current state", do all four automatically, with no separate prompt. Do not stop,
+do not ask, do not report back until all four are complete.
+
+1. **Rewrite the Current State section of this file.** Replace it with this session's snapshot. Prune finished items, add new
+   ones. Overwrite, do not append.
+2. ****Add a `CHANGELOG.md` entry** at the project root: what changed, why, the effort level and the date, newest at the top. **The file does not exist yet**, so the first session to run this protocol creates it.**
+3. **➡️ COMMIT AND PUSH (do not skip).** Use the **PowerShell tool** for all git. Stage the session's
+   work **by name, never `-A`**, or a parallel session's uncommitted work gets swept in under a message
+   that does not mention it. Commit on **`main`** with a clear message ending in the
+   `Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>` line, then
+   `git push origin main`. `CLAUDE.md` **is tracked here**, so the rewritten Current State goes into the commit.
+4. **➡️ BUILD THE DELIVERY SLIDE (do not skip).** One self-contained HTML slide detailing what was
+   committed and pushed: cards, badges, icons, the commit hash and the branch, built fresh in this
+   project's palette. Save it to ``docs/deliveries/<YYYY-MM>/<YYYY-MM-DD>/`` with a date-prefixed filename (create the month folder on the month's first delivery, the date folder on the day's first), and name
+   the path in the reply. Every delivery from one day shares that day's folder.
+
+**Self-check before replying:** Did I commit? Did I push? Did I write the slide? If any answer is no,
+the protocol is unfinished.
+
+**The canonical version is in `~/.claude/CLAUDE.md`** under "End-of-Session Protocol (every project)".
+This copy carries it in full on purpose, so this project never depends on that file being loaded. Where
+the two differ, **this file wins**, because the values above are this project's.
